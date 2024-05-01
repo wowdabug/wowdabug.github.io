@@ -1,1 +1,1 @@
-redirect to wowdabug games remastered
+redirect to wowdabug games
