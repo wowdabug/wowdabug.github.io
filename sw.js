@@ -13,11 +13,9 @@ self.addEventListener("fetch", (event) => {
 
     const newHeaders = new Headers(response.headers);
 
-    // Main headers required for SharedArrayBuffer
     newHeaders.set("Cross-Origin-Embedder-Policy", "require-corp");
     newHeaders.set("Cross-Origin-Opener-Policy", "same-origin");
 
-    // Prevent CORS issues for internal files
     newHeaders.set("Cross-Origin-Resource-Policy", "same-origin");
 
     return new Response(buffer, {
